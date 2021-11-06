@@ -1,0 +1,245 @@
+#experience {
+  padding: 0px 15px 50px 15px;
+  margin-bottom: 50px;
+}
+
+#experience .title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#experience .container .title h1 {
+  font-weight: 700;
+  color: #eef9ff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 4.5rem;
+  position: relative;
+  left: -30px;
+  top: 20px;
+  padding: 30px;
+}
+
+#experience .container .experience-container .shapes .blue-square {
+  border: 30px solid rgb(17, 24, 39);
+  width: 250px;
+  height: 250px;
+  position: relative;
+  left: 30px;
+  top: -100px;
+  background: linear-gradient(
+    to right top,
+    rgb(29, 78, 216),
+    rgb(30, 64, 175),
+    rgb(17, 24, 39)
+  );
+  box-shadow: inset 0px 0px 0px 10px white;
+  text-align: center;
+}
+
+#experience .container .experience-container .shapes .blue-square .inner-border {
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+  top: 80px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+#experience .container .yellow-circle {
+  border: 30px solid #dbd80d;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  top: -130px;
+  left: 310px;
+  text-transform: uppercase;
+  background: white;
+  text-align: center;
+}
+
+#experience .container .yellow-circle h1 {
+  margin: 0 auto;
+  position: relative;
+  top: 80px;
+  font-weight: 900;
+  font-size: 1.7rem;
+  color: #dbd80d;
+}
+#experience .container .red-triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 100px 150px 100px;
+  border-color: transparent transparent #ff1a1a transparent;
+  position:relative;
+  top: -260px;
+}
+#experience .container .red-triangle h1{
+  display: flex;
+  position: relative;
+  top: 100px;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #eef9ff;
+ 
+}
+
+#experience .container .experience-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#experience .container .experience-container .info {
+  color: white;
+  font-size: 1.3rem;
+  
+}
+
+#experience .container .experience-container .info h3 {
+  padding: 10px 0px;
+  text-decoration: underline;
+}
+#experience .container .experience-container .info ul {
+  padding: 10px 5px;
+}
+#experience .container .experience-container .info ul li {
+  padding: 10px 10px;
+}
+
+#experience .container .experience-container .mySkills .skills {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  grid-gap: 15px;
+
+}
+#experience .container .experience-container .mySkills .skills .skill {
+  background: black;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+#experience .container .experience-container .mySkills .skills .skill:hover {
+  background: white;
+  color: black;
+  
+}
+.sql-logo{
+  position: relative;
+  top: 25px;
+}
+
+#experience .container .experience-container .mySkills .skills img{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin:auto;
+}
+#experience .container .experience-container .mySkills .skills h1 {
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+/* #experience .container .experience-container .mySkills ul.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  color: white;
+  padding: 5px 5px;
+  margin: 5px;
+  font-size: 1.2rem;
+  width: 50%;
+} */
+#experience .container .experience-container .mySkills {
+  display: flex;
+  flex-direction: column;
+  /* -webkit-box-shadow: 7px 5px 15px 5px #00cc99;
+  box-shadow: 7px 5px 15px 5px #00cc99; */
+  width: 50%;
+  margin: auto;
+}
+/* #experience .container .experience-container .mySkills .skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
+#experience .container .experience-container .mySkills h3 {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  border-radius: 10%;
+  padding: 10px;
+  
+}
+#experience .container .experience-container .mySkills .title {
+  grid-column: 1/3;
+}
+
+
+/* #experience .container .experience-container .mySkills .skills li:nth-child(odd) {
+  background: linear-gradient(rgb(17, 24, 39), rgb(87, 83, 78));
+}
+#experience .container .experience-container .mySkills .skills li:hover:nth-child(odd) {
+  background: radial-gradient(
+    at center bottom,
+    rgb(120, 53, 15),
+    rgb(252, 211, 77)
+  );
+} */
+
+#experience .container .experience-container .education {
+  color: white;
+  -webkit-box-shadow: -3px 5px 15px 5px #6600ff;
+  box-shadow: -3px 5px 15px 5px #6600ff;
+  height: 900px;
+  background-color: #404040;
+  opacity: 90%;
+}
+#experience .container .experience-container .education .container {
+  padding: 50px;
+}
+
+ .container .experience-container .education h3 {
+  padding: 10px;
+  font-size: 2rem;
+}
+ .container .experience-container .education p {
+  padding: 0 60px 0px 0px;
+  font-size: 1.5rem;
+}
+ .container .experience-container .education ul li {
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 600px){
+  .experience{
+    padding: 0;
+  }
+  #experience .container .experience-container .mySkills {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    margin: auto;
+  }
+  #experience .container .title{
+    padding: 0;   
+  }
+  #experience .container .title h1{
+    position: relative;
+    left: 0px;
+  }
+  #experience .container .experience-container .mySkills .skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+}

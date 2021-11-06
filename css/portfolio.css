@@ -1,0 +1,405 @@
+#portfolio {
+  padding: 50px 25px 20px 25px;
+  margin: 25px 0px;
+}
+#portfolio .title {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#portfolio .container .title {
+  font-weight: 700;
+}
+#portfolio .services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-weight: 100;
+  grid-gap: 40px;
+  background: rgba(255, 255, 255, 0);
+}
+
+#portfolio .container .title h1 {
+  font-weight: 700;
+  color: #eef9ff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 4rem;
+  position: relative;
+  left: -70px;
+  top: -20px;
+}
+
+#portfolio .container .title .pink-square {
+  background: #c14242;
+  width: 200px;
+  height: 150px;
+  border: 5px solid #52b8ff;
+}
+
+#portfolio .container .portfolio-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 350px 350px;
+  grid-gap: 30px;
+  justify-content: center;
+}
+#portfolio .container .email-Title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+
+}
+
+
+#portfolio .container .portfolio-container .image_overlay {
+text-align: center;
+}
+#portfolio .container .portfolio-container .image_overlay a{
+  color: white;
+}
+#portfolio .container .portfolio-container .image_overlay a:hover{
+  color:darkslateblue;
+}
+.pj-code-title{
+  margin-bottom: 0;
+}
+#portfolio .container .portfolio-container .image_overlay ul.project-code {
+  list-style: none;
+  padding: 5px 5px;
+  text-align: center;
+  display: flex;
+  margin: inherit;
+}
+#portfolio .container .portfolio-container .image_overlay ul.project-code li{
+  border-radius: 6px;
+  background: linear-gradient(90deg, hsla(10, 82%, 65%, 1) 0%, hsla(290, 79%, 13%, 1) 100%);  color:rgba(0, 0, 0, 0.521);
+  color: white;
+  margin: 5px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+
+}
+#portfolio .container .portfolio-container .box {
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  display: block;
+}
+#portfolio .container .portfolio-container .box:hover {
+  background: rgba(255, 255, 255, 1);
+}
+/* #portfolio .container .portfolio-container .box.image-1 {
+  background: url("../images/HBOCloneMain.JPG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1/3;
+  grid-row: 1/2;
+} */
+#portfolio .container .portfolio-container .box.image-1 {
+  background: url("../images/uberEmail.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+
+#portfolio .container .portfolio-container .box.image-2 {
+  background: url("../images/EmailTemp4.JPG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+#portfolio .container .portfolio-container .box.image-3 {
+  background: url("../images/EmailTemp6.JPG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+#portfolio .container .portfolio-container .box.image-4 {
+  background: url("../images/EmailTemp7.JPG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+/* #portfolio .container .portfolio-container .box.image-8 {
+  background: url("../images/burger-site.JPG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+#portfolio .container .portfolio-container .box.image-9 {
+  background: url("../images/burger-site2.JPG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 2/3;
+  grid-row: 3/4;
+} */
+
+#portfolio .container .portfolio-container .box.image-5 {
+  background: url("../images/Walmart-Email.JPG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+
+#portfolio .container .portfolio-container .box.image-2 .image_overlay .project-code li{
+  text-transform: uppercase;
+}
+#portfolio .container .portfolio-container .box.image-5 .image_overlay .project-code li{
+  text-transform: uppercase;
+}
+#portfolio .container .portfolio-container .box.image-6 .image_overlay .project-code li{
+  text-transform: uppercase;
+}
+#portfolio .container .portfolio-container .box.image-7 .image_overlay .project-code li{
+  text-transform: uppercase;
+}
+#portfolio .container .portfolio-container .box.image-10 .image_overlay .project-code li{
+  text-transform: uppercase;
+}
+
+#portfolio .container .portfolio-container .image_overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+#portfolio .container .portfolio-container .image_overlay:hover{
+  opacity:1;
+}
+
+
+
+/* React Portion */
+#portfolio .container .react-Title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+
+}
+
+#portfolio .container .react-Projects {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: 350px;
+  grid-gap: 30px;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+#portfolio .container .react-Projects .image_overlay {
+  text-align: center;
+}
+#portfolio .container .react-Projects .image_overlay a{
+  color: white;
+}
+#portfolio .container .react-Projects .image_overlay a:hover{
+  color:darkslateblue;
+}
+.pj-code-title{
+  margin-bottom: 0;
+}
+#portfolio .container .react-Projects .image_overlay ul.project-code {
+  list-style: none;
+  padding: 5px 5px;
+  text-align: center;
+  display: flex;
+  margin: inherit;
+}
+#portfolio .container .react-Projects .image_overlay ul.project-code li{
+  border-radius: 6px;
+  background: linear-gradient(90deg, hsla(10, 82%, 65%, 1) 0%, hsla(290, 79%, 13%, 1) 100%);  color:rgba(0, 0, 0, 0.521);
+  color: white;
+  margin: 5px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+
+}
+#portfolio .container .react-Projects .box {
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  display: block;
+}
+#portfolio .container .react-Projects .box:hover {
+  background: rgba(255, 255, 255, 1);
+}
+#portfolio .container .react-Projects .image_overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+#portfolio .container .react-Projects .image_overlay:hover{
+  opacity:1;
+}
+
+#portfolio .container .react-Projects .nextbox.image-r1 {
+  background: url("../images/HBOCloneMain.JPG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+#portfolio .container .react-Projects .nextbox.image-r2 {
+  background: url("../images/HBOCloneMain2.JPG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+#portfolio .container .react-Projects .nextbox.image-r3 {
+  background: url("../images/HBOCloneMain3.JPG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+#portfolio .container .react-Projects .nextbox.image-2 .image_overlay .project-code li{
+  text-transform: uppercase;
+}
+
+
+/* Landing Portion */
+#portfolio .container .landingPage-Title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+}
+#portfolio .container .landingPage-Projects {
+  display: grid;
+  grid-template-columns: 350px 350px;
+  grid-template-rows: 350px;
+  grid-gap: 30px;
+  justify-content: center;
+}
+#portfolio .container .landingPage-Projects .image_overlay {
+  text-align: center;
+}
+#portfolio .container .landingPage-Projects .image_overlay a{
+  color: white;
+}
+#portfolio .container .landingPage-Projects .image_overlay a:hover{
+  color:darkslateblue;
+}
+.pj-code-title{
+  margin-bottom: 0;
+}
+#portfolio .container .landingPage-Projects .image_overlay ul.project-code {
+  list-style: none;
+  padding: 5px 5px;
+  text-align: center;
+  display: flex;
+  margin: inherit;
+}
+#portfolio .container .landingPage-Projects .image_overlay ul.project-code li{
+  border-radius: 6px;
+  background: linear-gradient(90deg, hsla(10, 82%, 65%, 1) 0%, hsla(290, 79%, 13%, 1) 100%);  color:rgba(0, 0, 0, 0.521);
+  color: white;
+  margin: 5px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+
+}
+#portfolio .container .landingPage-Projects .box {
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  display: block;
+}
+#portfolio .container .landingPage-Projects .box:hover {
+  background: rgba(255, 255, 255, 1);
+}
+#portfolio .container .landingPage-Projects .image_overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+#portfolio .container .landingPage-Projects .image_overlay:hover{
+  opacity:1;
+}
+
+#portfolio .container .landingPage-Projects .nextbox.image-l1 {
+  background: url("../images/burger-site.JPG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+#portfolio .container .landingPage-Projects .nextbox.image-l2 {
+  background: url("../images/burger-site2.JPG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+
+#portfolio .container .landingPage-Projects .nextbox.image-2 .image_overlay .project-code li{
+  text-transform: uppercase;
+}
+
+@media only screen and(max-width: 600px){
+  
+
+}

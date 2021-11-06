@@ -1,0 +1,283 @@
+@import 'reset.css';
+@import 'First_level.css';
+@import 'services.css';
+@import 'portfolio.css';
+@import 'experience.css';
+@import 'contact.css';
+@import url("https:fonts.googleapis.com/css2?family=Open+Sans:ital@1display=swap");
+
+ /* #services {
+     background: linear-gradient(90deg, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
+     position: relative;
+     top: 59px;
+
+ } */
+  body{
+   margin: 0px;
+   width: 100%;
+  } 
+html{
+  background: linear-gradient(
+    90deg,
+    rgb(55, 65, 81),
+    rgb(17, 24, 39),
+    rgb(0, 0, 0)
+  );
+  background-position: center;
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: stretch;
+  width: 100%;
+  background: black;
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  background: black;
+  padding: 15px 20px;
+}
+header .header-menu {
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  padding: 20px 0px 0px 0px;
+  animation: nav-load 1s; 
+  /* z-index: 1; */
+}
+
+header .header-menu a {
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0px 20px;
+  /* animation-name: nav-link-load;
+  animation-duration: var(--nav-link-load-time);
+  animation-timing-function: ease-in;
+  animation-delay: var(--nav-link-load-time);
+  transform: scale(1);
+  animation-fill-mode: forwards;  */
+  animation: expandBox 5s ease-in-out;
+  
+}
+@keyframes expandBox{
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(4);
+  }
+}
+ 
+header .header-menu a {
+  animation-name: nav-sec-link-load;
+  transform: translateX(0%);
+}
+header .header-menu #header-home {
+  color: rgb(144, 45, 201);
+}
+header .header-menu #header-serv {
+  color: rgb(45, 201, 45);
+}
+header .header-menu #header-port {
+  color: rgb(6, 125, 155);
+}
+header .header-menu #header-exp {
+  color: rgba(201, 74, 30, 1);
+}
+header .header-menu #header-home:hover {
+  background-color: rgb(144, 45, 201);
+  color: white;
+  padding: 10px;
+}
+header .header-menu #header-serv:hover {
+  background-color: rgb(45, 201, 45);
+  color: white;
+  padding: 10px;
+}
+header .header-menu #header-port:hover {
+  background-color: rgb(6, 125, 155);
+  color: white;
+  padding: 10px;
+}
+header .header-menu #header-exp:hover {
+  background-color: rgba(201, 74, 30, 1);
+  color: white;
+  padding: 10px;
+}
+footer {
+  padding: 0px 15px 50px 15px;
+  display: flex;
+  flex-direction: column;
+}
+footer .container {
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+}
+footer h1 {
+  font-weight: 700;
+  color: #eef9ff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.3rem;
+  position: relative;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+footer ul li {
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: #eef9ff;
+  text-decoration: none;
+}
+footer ul .fa {
+  font-size: 2.6rem;
+}
+footer ul #linkedIn {
+  color: #0099ff;
+}
+footer ul #github {
+  color: #b3b300;
+}
+footer ul #mail {
+  color: #ff1a1a;
+}
+
+@media only screen and (max-width: 600px){
+  body, html {
+    width: 100%;
+    margin: auto;
+  }
+  /* Top */
+  #top{
+    width: 100%;
+    margin-top: 20px;
+
+  }
+  #top .container{
+    width: 100%;
+  }
+  #top .container .top-left-side{
+    width: 100%;
+  }
+  #top .container .top-left-side .blue-square{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+  }
+  /* Header Section */
+  header{
+    width:100%;
+  }
+  header .header-menu{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  #top .top-left-side .blue-square{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 15px;
+    border-style: solid;
+    border-color: rgb(219, 241, 255);
+    border-image: initial;
+    margin: auto;
+  }
+
+  /* Portfolio Section */
+  #portfolio{
+    position: relative;
+    top: 350px;
+  }
+  #portfolio .container .portfolio-container{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 250px 250px 250px;
+    grid-gap: 10px;
+    justify-content: center;
+  }
+  #portfolio .container .portfolio-container .box.image-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #portfolio .container .portfolio-container .box.image-2 {
+  
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  #portfolio .container .portfolio-container .box.image-3 {
+
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #portfolio .container .portfolio-container .box.image-4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  #portfolio .container .portfolio-container .box.image-5 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  /* React Project */
+  #portfolio .container .react-Projects{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 250px 250px 250px;
+    grid-gap: 10px;
+    justify-content: center;
+  }
+  #portfolio .container .react-Projects .nextbox.image-r1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #portfolio .container .react-Projects .nextbox.image-r2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  #portfolio .container .react-Projects .nextbox.image-r3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  /* Landing CSS */
+  #portfolio .container .landingPage-Projects {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Footer Section */
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+    top: 350px;
+  }
+  footer .container ul{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
