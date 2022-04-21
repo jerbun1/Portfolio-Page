@@ -18,10 +18,8 @@
     font-weight: 700;
     position: relative;
     font-size: 3.5rem;
-    color: #eef9ff;
+    color: #293136;
     margin-bottom: 2rem;
-    z-index: 1;
-
 
 }
 #services .container .circle{
@@ -47,20 +45,23 @@
     align-items: center;
 }
 hr{
-  z-index: 2;
+  z-index: 1;
   top: -80px;
   width: 46%;
   position: relative;
-  color: blue;
+  background: #ee6055;
   height: 15px;
   -webkit-animation-name: animate1; /* Chrome, Safari, Opera */
   animation-name: animate1;
-  animation: animate1 10s infinite;
+  animation: animate1 15s infinite;
+  animation-iteration-count: infinite;
 }
 
 /* Standard syntax */
 @keyframes animate1 {
-
+  0% {
+		background: #ee6055;
+	}
   20% {
 		background: #ee6055;
 	}
@@ -93,7 +94,7 @@ hr{
     width: 8%;
     margin: 15px;
     border-radius: 20px;
-    z-index: 3;
+    z-index:2;
   }
   .idea i{
     display: flex;
@@ -116,7 +117,7 @@ hr{
     width: 8%;
     margin: 15px;
     border-radius: 20px;
-    z-index: 3;
+    z-index:2;
   }
   .plan i{
       padding: 10px;
@@ -144,7 +145,7 @@ hr{
     width: 8%;
     margin: 15px;
     border-radius: 20px;
-    z-index: 3;
+    z-index:2;
 
   }
   .design i{
@@ -171,7 +172,7 @@ hr{
     width: 8%;
     margin: 15px;
     border-radius: 20px;
-    z-index: 3;
+    z-index:2;
 
   }
   .develop i{
@@ -198,7 +199,7 @@ hr{
     width: 8%;
     margin: 15px;
     border-radius: 20px;
-    z-index: 3;
+    z-index:2;
   }
   .test-code h1{
     text-align: center;
@@ -224,7 +225,7 @@ hr{
     width: 8%;
     margin: 15px;
     border-radius: 20px;
-    z-index: 3;
+    z-index:2;
 
   }
   .launch h1{
@@ -282,7 +283,7 @@ hr{
     width: 30%;
     margin: 15px;
     border-radius: 20px;
-    z-index: 3;
+z-index:2;
   }
   .idea i{
     display: flex;
@@ -305,7 +306,7 @@ hr{
     width: 35%;
     margin: 15px;
     border-radius: 20px;
-    z-index: 3;
+z-index:2;
   }
   .plan i{
       padding: 10px;
@@ -333,7 +334,7 @@ hr{
     width: 35%;
     margin: 15px;
     border-radius: 20px;
-    z-index: 3;
+z-index:2;
 
   }
   .design i{
@@ -360,7 +361,7 @@ hr{
     width: 35%;
     margin: 15px;
     border-radius: 20px;
-    z-index: 3;
+z-index:2;
 
   }
   .develop i{
@@ -387,7 +388,7 @@ hr{
     width: 35%;
     margin: 15px;
     border-radius: 20px;
-    z-index: 3;
+    z-index:2;
   }
   .test-code h1{
     text-align: center;
@@ -413,7 +414,7 @@ hr{
     width: 35%;
     margin: 15px;
     border-radius: 20px;
-    z-index: 3;
+z-index:2;
 
   }
   .launch h1{
@@ -440,7 +441,7 @@ hr{
   hr{
     height: 700px;
     width: 15%;
-    z-index: 2;
+    z-index: 1;
     top: -780px;
     position: relative;
   }
@@ -454,7 +455,7 @@ hr{
   hr{
     height: 700px;
     width: 15%;
-    z-index: 2;
+    z-index: 1;
     top: -780px;
     position: relative;
   }

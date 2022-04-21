@@ -13,7 +13,7 @@
 
 #experience .container .title h1 {
   font-weight: 700;
-  color: #eef9ff;
+  color: #293136;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 4.5rem;
@@ -23,73 +23,7 @@
   padding: 30px;
 }
 
-#experience .container .experience-container .shapes .blue-square {
-  border: 30px solid rgb(17, 24, 39);
-  width: 250px;
-  height: 250px;
-  position: relative;
-  left: 30px;
-  top: -100px;
-  background: linear-gradient(
-    to right top,
-    rgb(29, 78, 216),
-    rgb(30, 64, 175),
-    rgb(17, 24, 39)
-  );
-  box-shadow: inset 0px 0px 0px 10px white;
-  text-align: center;
-}
 
-#experience .container .experience-container .shapes .blue-square .inner-border {
-  text-transform: uppercase;
-  color: white;
-  position: relative;
-  top: 80px;
-  font-size: 1.4rem;
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
-}
-
-#experience .container .yellow-circle {
-  border: 30px solid #dbd80d;
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  position: relative;
-  top: -130px;
-  left: 310px;
-  text-transform: uppercase;
-  background: white;
-  text-align: center;
-}
-
-#experience .container .yellow-circle h1 {
-  margin: 0 auto;
-  position: relative;
-  top: 80px;
-  font-weight: 900;
-  font-size: 1.7rem;
-  color: #dbd80d;
-}
-#experience .container .red-triangle {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 100px 150px 100px;
-  border-color: transparent transparent #ff1a1a transparent;
-  position:relative;
-  top: -260px;
-}
-#experience .container .red-triangle h1{
-  display: flex;
-  position: relative;
-  top: 100px;
-  justify-content: center;
-  text-transform: uppercase;
-  font-weight: 800;
-  color: #eef9ff;
- 
-}
 
 #experience .container .experience-container {
   display: flex;
@@ -116,23 +50,103 @@
 #experience .container .experience-container .mySkills .skills {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
   grid-gap: 15px;
 
 }
-#experience .container .experience-container .mySkills .skills .skill {
-  background: black;
+#experience .container .experience-container .mySkills .skills .skill_1 {
+  background: #293136;
   border-radius: 50%;
   width: 100%;
   height: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
-#experience .container .experience-container .mySkills .skills .skill:hover {
-  background: white;
-  color: black;
-  
+#experience .container .experience-container .mySkills .skills .skill_1:hover {
+  background: #ec6630;
 }
-.sql-logo{
+#experience .container .experience-container .mySkills .skills .skill_2 {
+  background: #293136;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+#experience .container .experience-container .mySkills .skills .skill_2:hover {
+  background: #0096e6;
+}
+#experience .container .experience-container .mySkills .skills .skill_3 {
+  background: #293136;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+#experience .container .experience-container .mySkills .skills .skill_3:hover {
+  background: #eeaf4b;
+}
+#experience .container .experience-container .mySkills .skills .skill_4 {
+  background: #293136;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+#experience .container .experience-container .mySkills .skills .skill_4:hover {
+  background: #5153ff;
+}
+#experience .container .experience-container .mySkills .skills .skill_5 {
+  background: #293136;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#experience .container .experience-container .mySkills .skills .skill_5:hover {
+  background: #5153ff;
+}
+
+#experience .container .experience-container .mySkills .skills .skill_6 {
+  background: #293136;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+#experience .container .experience-container .mySkills .skills .skill_6:hover {
+  background: #9b59b6;
+}
+#experience .container .experience-container .mySkills .skills .skill_7 {
+  background: #293136;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+#experience .container .experience-container .mySkills .skills .skill_7:hover {
+  background:#4765fe;
+}
+#experience .container .experience-container .mySkills .skills .skill_8 {
+  background: #293136;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+#experience .container .experience-container .mySkills .skills .skill_8:hover {
+  background: #c02dfe;
+}
+
+#html-logo, #css-logo, #javascript-logo, #sql-logo, #php-logo, #node-logo{
   position: relative;
   top: 25px;
 }
@@ -143,20 +157,14 @@
  align-items: center;
  margin:auto;
 }
+
 #experience .container .experience-container .mySkills .skills h1 {
   margin: auto;
   text-align: center;
   color: white;
+  font-weight: 900, bold;
 }
-/* #experience .container .experience-container .mySkills ul.skills li {
-  border-radius: 6px;
-  display: inline-block;
-  color: white;
-  padding: 5px 5px;
-  margin: 5px;
-  font-size: 1.2rem;
-  width: 50%;
-} */
+
 #experience .container .experience-container .mySkills {
   display: flex;
   flex-direction: column;
@@ -165,10 +173,7 @@
   width: 50%;
   margin: auto;
 }
-/* #experience .container .experience-container .mySkills .skills {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-} */
+
 #experience .container .experience-container .mySkills h3 {
   color: white;
   font-size: 1.2rem;
@@ -182,17 +187,6 @@
   grid-column: 1/3;
 }
 
-
-/* #experience .container .experience-container .mySkills .skills li:nth-child(odd) {
-  background: linear-gradient(rgb(17, 24, 39), rgb(87, 83, 78));
-}
-#experience .container .experience-container .mySkills .skills li:hover:nth-child(odd) {
-  background: radial-gradient(
-    at center bottom,
-    rgb(120, 53, 15),
-    rgb(252, 211, 77)
-  );
-} */
 
 #experience .container .experience-container .education {
   color: white;
@@ -219,7 +213,7 @@
   font-size: 1.3rem;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 400px){
   .experience{
     padding: 0;
   }
@@ -239,7 +233,72 @@
   #experience .container .experience-container .mySkills .skills{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  #experience .container .experience-container .mySkills .skills .skill_1 {
+    background: #293136;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #experience .container .experience-container .mySkills .skills .skill_2 {
+    background: #293136;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  #experience .container .experience-container .mySkills .skills .skill_3 {
+    background: #293136;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #experience .container .experience-container .mySkills .skills .skill_4 {
+    background: #293136;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  #experience .container .experience-container .mySkills .skills .skill_5 {
+    background: #293136;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  #experience .container .experience-container .mySkills .skills .skill_6 {
+    background: #293136;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  #experience .container .experience-container .mySkills .skills .skill_7 {
+    background: #293136;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  #experience .container .experience-container .mySkills .skills .skill_8 {
+    background: #293136;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 4/5;
   }
 
 }

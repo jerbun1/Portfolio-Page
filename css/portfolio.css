@@ -25,7 +25,7 @@
 
 #portfolio .container .title h1 {
   font-weight: 700;
-  color: #eef9ff;
+  color: #293136;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 4rem;
@@ -52,7 +52,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #293136;
   font-size: 2rem;
 
 }
@@ -106,14 +106,36 @@ text-align: center;
   grid-row: 1/2;
 } */
 #portfolio .container .portfolio-container .box.image-1 {
-  background: url("../images/uberEmail.png");
+  background: url("../images/uberEats.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   grid-column: 1/2;
   grid-row: 1/2;
-}
+  animation: switchPromo 15s infinite;
 
+}
+@keyframes switchPromo{
+  0%{
+    background: url("../images/uberEats2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  50%{
+    background: url("../images/uberEats.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background: url("../images/uberEats2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+}
 
 #portfolio .container .portfolio-container .box.image-2 {
   background: url("../images/EmailTemp4.JPG");
@@ -122,14 +144,60 @@ text-align: center;
   background-size: cover;
   grid-column: 2/3;
   grid-row: 1/2;
+  animation: switchPromo1 15s infinite;
+}
+@keyframes switchPromo1{
+  0%{
+    background: url("../images/EmailTemp4.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  50%{
+    background: url("../images/EmailTemp5.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background: url("../images/EmailTemp4.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
 }
 #portfolio .container .portfolio-container .box.image-3 {
-  background: url("../images/EmailTemp6.JPG");
+  background: url("../images/NewsLetterEmailTemp.JPG");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   grid-column: 3/4;
   grid-row: 1/2;
+  animation: switchPromo2 15s infinite;
+
+}
+@keyframes switchPromo2{
+  0%{
+    background: url("../images/NewsLetterEmailTemp.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  50%{
+    background: url("../images/NewsLetterEmailTemp2.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100%{
+    background: url("../images/NewsLetterEmailTemp3.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
 }
 #portfolio .container .portfolio-container .box.image-4 {
   background: url("../images/EmailTemp7.JPG");
@@ -138,24 +206,30 @@ text-align: center;
   background-size: cover;
   grid-column: 4/5;
   grid-row: 1/2;
+  animation: switchPromo3 15s infinite;
+}
+@keyframes switchPromo3{
+  0%{
+    background: url("../images/EmailTemp7.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  50%{
+    background: url("../images/EmailTemp6.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background: url("../images/EmailTemp7.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
 }
 
-/* #portfolio .container .portfolio-container .box.image-8 {
-  background: url("../images/burger-site.JPG");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  grid-column: 1/2;
-  grid-row: 3/4;
-}
-#portfolio .container .portfolio-container .box.image-9 {
-  background: url("../images/burger-site2.JPG");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  grid-column: 2/3;
-  grid-row: 3/4;
-} */
 
 #portfolio .container .portfolio-container .box.image-5 {
   background: url("../images/Walmart-Email.JPG");
@@ -164,8 +238,30 @@ text-align: center;
   background-size: cover;
   grid-column: 1/2;
   grid-row: 2/3;
-}
+  animation: switchPromo4 15s infinite;
 
+}
+@keyframes switchPromo4{
+  0%{
+    background: url("../images/Walmart-Email2.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  50%{
+  background: url("../images/Walmart-Email.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background: url("../images/Walmart-Email2.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+}
 
 #portfolio .container .portfolio-container .box.image-2 .image_overlay .project-code li{
   text-transform: uppercase;
@@ -207,7 +303,7 @@ text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color:#293136;
   font-size: 2rem;
 
 }
@@ -283,6 +379,28 @@ text-align: center;
   background-size: cover;
   grid-column: 1/2;
   grid-row: 1/2;
+  animation: switchHBO 15s infinite;
+}
+@keyframes switchHBO{
+  33% {
+    background: url("../images/HBOCloneMain2.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  66%{
+    background: url("../images/HBOCloneMain3.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background: url("../images/HBOCloneMain2.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
 }
 #portfolio .container .react-Projects .nextbox.image-r2 {
   background: url("../images/HBOCloneMain2.JPG");
@@ -291,6 +409,29 @@ text-align: center;
   background-size: cover;
   grid-column: 2/3;
   grid-row: 1/2;
+  animation: switchHBO2 15s infinite;
+
+}
+@keyframes switchHBO2{
+  33% {
+    background: url("../images/HBOCloneMain3.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  66%{
+    background: url("../images/HBOCloneMain2.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    100% {
+    background: url("../images/HBOCloneMain.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
 }
 #portfolio .container .react-Projects .nextbox.image-r3 {
   background: url("../images/HBOCloneMain3.JPG");
@@ -299,6 +440,23 @@ text-align: center;
   background-size: cover;
   grid-column: 3/4;
   grid-row: 1/2;
+  animation: switchHBO3 15s infinite;
+
+}
+@keyframes switchHBO3{
+  33% {
+    background: url("../images/HBOCloneMain2.JPG");
+    background-size: cover;
+  }
+  66%{
+    background: url("../images/HBOCloneMain.JPG");
+    background-size: cover;
+  }
+  100% {
+    background: url("../images/HBOCloneMain3.JPG");
+    background-size: cover;
+
+  }
 }
 
 #portfolio .container .react-Projects .nextbox.image-2 .image_overlay .project-code li{
@@ -311,7 +469,7 @@ text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #293136;
   font-size: 2rem;
 }
 #portfolio .container .landingPage-Projects {
@@ -373,6 +531,7 @@ text-align: center;
   opacity: 0;
   transition: opacity 0.5s;
 }
+
 #portfolio .container .landingPage-Projects .image_overlay:hover{
   opacity:1;
 }
@@ -384,6 +543,23 @@ text-align: center;
   background-size: cover;
   grid-column: 1/2;
   grid-row: 1/2;
+  animation: switchPic 15s infinite;
+  /* transition: all .5s; */
+}
+@keyframes switchPic{
+  0% {
+    background: url("../images/burger-site.JPG");
+    background-size: cover;
+  }
+  50%{
+    background: url("../images/burger-site2.JPG");
+    background-size: cover;
+  }
+  100% {
+    background: url("../images/burger-site.JPG");
+    background-size: cover;
+
+  }
 }
 #portfolio .container .landingPage-Projects .nextbox.image-l2 {
   background: url("../images/burger-site2.JPG");
@@ -392,13 +568,157 @@ text-align: center;
   background-size: cover;
   grid-column: 2/3;
   grid-row: 1/2;
-}
+  animation: switchPic2 15s infinite;
 
+}
+@keyframes switchPic2{
+  0% {
+    background: url("../images/burger-site2.JPG");
+    background-size: cover;
+  }
+  50%{
+    background: url("../images/burger-site.JPG");
+    background-size: cover;
+  }
+  100% {
+    background: url("../images/burger-site2.JPG");
+    background-size: cover;
+
+  }
+}
 
 #portfolio .container .landingPage-Projects .nextbox.image-2 .image_overlay .project-code li{
   text-transform: uppercase;
 }
+#portfolio .container .WebAdmin-Title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#293136;
+  font-size: 2rem;
 
+}
+
+#portfolio .container .WebAdmin-Projects {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: 350px;
+  grid-gap: 30px;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+#portfolio .container .WebAdmin-Projects .image_overlay {
+  text-align: center;
+}
+#portfolio .container .WebAdmin-Projects .image_overlay a{
+  color: white;
+}
+#portfolio .container .WebAdmin-Projects .image_overlay a:hover{
+  color:darkslateblue;
+}
+#portfolio .container .WebAdmin-Projects .image_overlay:hover{
+  opacity:1;
+}
+#portfolio .container .WebAdmin-Projects .image_overlay ul.project-code {
+  list-style: none;
+  padding: 5px 5px;
+  text-align: center;
+  display: flex;
+  margin: inherit;
+}
+#portfolio .container .WebAdmin-Projects .image_overlay ul.project-code li{
+  border-radius: 6px;
+  background: linear-gradient(90deg, hsla(10, 82%, 65%, 1) 0%, hsla(290, 79%, 13%, 1) 100%);  color:rgba(0, 0, 0, 0.521);
+  color: white;
+  margin: 5px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+
+}
+#portfolio .container .WebAdmin-Projects .box {
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  display: block;
+}
+#portfolio .container .WebAdmin-Projects .box:hover {
+  background: rgba(255, 255, 255, 1);
+}
+#portfolio .container .WebAdmin-Projects .image_overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+#portfolio .container .WebAdmin-Projects .nextbox.image-WA1 {
+  background: url("../images/WebAdmin.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  animation: switchWebAdmin 15s infinite;
+
+}
+
+@keyframes switchWebAdmin{
+  0% {
+    background: url("../images/WebAdmin.png");
+    background-size: cover;
+  }
+  25% {
+    background: url("../images/WebAdmin2.png");
+    background-size: cover;
+  }
+  50%{
+    background: url("../images/WebAdmin3.png");
+    background-size: cover;
+  }
+  75% {
+    background: url("../images/WebAdmin4.png");
+    background-size: cover;
+
+  }
+}
+#portfolio .container .WebAdmin-Projects .nextbox.image-WA2 {
+  background: url("../images/WebAdmin3.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  animation: switchWebAdmin2 15s infinite;
+
+}
+@keyframes switchWebAdmin2{
+  0% {
+    background: url("../images/WebAdmin2.png");
+    background-size: cover;
+  }
+  25% {
+    background: url("../images/WebAdmin.png");
+    background-size: cover;
+  }
+  50%{
+    background: url("../images/WebAdmin4.png");
+    background-size: cover;
+  }
+  75% {
+    background: url("../images/WebAdmin.png");
+    background-size: cover;
+
+  }
+}
 @media only screen and(max-width: 600px){
   
 
